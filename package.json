@@ -1,0 +1,25 @@
+{
+  "name": "shiny-scroll",
+  "version": "0.1.0",
+  "description": "shiny~",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 1 && exit 0",
+    "major": "npm version major && npm publish",
+    "minor": "npm version minor && npm publish",
+    "patch": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjonas/shiny-scroll.git"
+  },
+  "keywords": [
+    "scroll"
+  ],
+  "author": "fjonas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fjonas/shiny-scroll/issues"
+  },
+  "homepage": "https://github.com/fjonas/shiny-scroll#readme"
+}
