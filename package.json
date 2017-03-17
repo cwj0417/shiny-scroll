@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/fjonas/shiny-scroll/issues"
   },
-  "homepage": "https://github.com/fjonas/shiny-scroll#readme"
+  "homepage": "https://github.com/fjonas/shiny-scroll#readme",
+  "dependencies": {
+    "lodash.throttle": "^4.1.1"
+  }
 }
