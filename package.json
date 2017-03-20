@@ -1,6 +1,6 @@
 {
   "name": "shiny-scroll",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "shiny~",
   "main": "shiny-scroll.js",
   "scripts": {
