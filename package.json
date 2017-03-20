@@ -1,6 +1,6 @@
 {
   "name": "shiny-scroll",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "shiny~",
   "main": "shiny-scroll.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "major": "npm version major && npm publish",
     "minor": "npm version minor && npm publish",
     "patch": "npm version patch && npm publish",
-	"build": "rollup -c",
-	"prepublish": "npm run build"
+    "build": "rollup -c",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
