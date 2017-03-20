@@ -1,9 +1,9 @@
 /**
  * create by cwj
  */
-import throttle from 'lodash.throttle'
+import throttle from "lodash.throttle"
 const triggers = ["scroll"]
-let watch = () => {
+let watch = function () {
     console.log(this)
 }
 let check = function (throttleNum) {
