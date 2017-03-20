@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/fjonas/shiny-scroll#readme",
   "dependencies": {
-    "lodash": "^4.17.4",
     "lodash.throttle": "^4.1.1"
   },
   "devDependencies": {
