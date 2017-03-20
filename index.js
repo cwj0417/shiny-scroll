@@ -1,3 +1,6 @@
+/**
+ * create by cwj
+ */
 import throttle from 'lodash.throttle'
 const triggers = ["scroll"]
 let watch = () => {

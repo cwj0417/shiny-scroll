@@ -2,12 +2,14 @@
   "name": "shiny-scroll",
   "version": "0.2.0",
   "description": "shiny~",
-  "main": "index.js",
+  "main": "shiny-scroll.js",
   "scripts": {
     "test": "echo 1 && exit 0",
     "major": "npm version major && npm publish",
     "minor": "npm version minor && npm publish",
-    "patch": "npm version patch && npm publish"
+    "patch": "npm version patch && npm publish",
+	"build": "rollup -c",
+	"prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,13 @@
   "homepage": "https://github.com/fjonas/shiny-scroll#readme",
   "dependencies": {
     "lodash.throttle": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-env": "^0.21.2",
+    "rollup-plugin-node-resolve": "^2.0.0"
   }
 }
