@@ -12,6 +12,10 @@ import {shinyScroll} from "shiny-scroll"
 ```
 
 ## usage
-to be continued
+```js
+let ele = document.selectQuery("body")
+let fn = () => {console.log("shiny~")
+shinyScroll(ele, fn)
+```
 
 ## SHINY~

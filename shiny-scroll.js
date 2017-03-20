@@ -450,18 +450,19 @@ var index = throttle;
  * create by cwj
  */
 var triggers = ["scroll"];
-var watch = function watch() {
-    console.log(this);
-};
-var check = function check(throttleNum) {
-    return index(watch, throttleNum);
+var check = function check(throttleNum, offset, fn) {
+    return index(function () {
+        if (this.scrollHeight - offset < this.scrollTop + this.offsetHeight) {
+            fn();
+        }
+    }, throttleNum);
 };
 var shinyScroll = function shinyScroll(ele, fn) {
     var offset = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 10;
     var throttleNum = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 200;
 
     triggers.forEach(function (event) {
-        ele.addEventListener(event, check(throttleNum));
+        ele.addEventListener(event, check(throttleNum, offset, fn));
     });
 };
 
